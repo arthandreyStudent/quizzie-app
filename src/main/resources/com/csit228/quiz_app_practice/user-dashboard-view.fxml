@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="500.0" spacing="20.0" style="-fx-background-color: #0f1b3d;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csit228.quiz_app_practice.controller.UserDashboardController">
+
+    <padding>
+        <Insets bottom="60.0" left="50.0" right="50.0" top="60.0" />
+    </padding>
+
+    <children>
+
+        <!-- 🔷 Header -->
+        <VBox alignment="CENTER_LEFT" spacing="5">
+            <Label text="Welcome!" textFill="WHITE">
+                <font>
+                    <Font name="Poppins Bold" size="40.0" />
+                </font>
+            </Label>
+
+            <!-- Dynamic username -->
+            <Label fx:id="usernameLabel" text="Username" textFill="#56adff">
+                <font>
+                    <Font name="Poppins Bold" size="22.0" />
+                </font>
+            </Label>
+        </VBox>
+
+        <Separator>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Separator>
+
+        <!-- 🕒 Login Info -->
+        <VBox alignment="CENTER_LEFT" spacing="10">
+            <Label text="Last Login" textFill="#bbbbbb">
+            <font>
+               <Font name="Poppins Regular" size="18.0" />
+            </font></Label>
+
+            <Label fx:id="lastLoginLabel" text="April 20, 2026 - 10:30 AM" textFill="WHITE">
+            <font>
+               <Font name="Poppins Regular" size="16.0" />
+            </font></Label>
+        </VBox>
+
+        <Separator>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin></Separator>
+
+        <!-- 📄 Account Details -->
+        <VBox alignment="CENTER_LEFT" spacing="10">
+
+            <Label text="Account Details" textFill="#bbbbbb">
+            <font>
+               <Font name="Poppins Regular" size="18.0" />
+            </font></Label>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label style="-fx-font-family: Poppins;" text="Full Name:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+                <Label fx:id="fullNameLabel" text="fullname" textFill="#56adff">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font></Label>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="User ID:" textFill="WHITE">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font></Label>
+                <Label fx:id="userIdLabel" text="12345" textFill="#56adff">
+               <font>
+                  <Font name="Poppins Regular" size="16.0" />
+               </font></Label>
+            </HBox>
+
+        </VBox>
+
+        <Separator>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Separator>
+
+        <!-- 🚪 Logout -->
+        <Button fx:id="logoutButton" onAction="#onClickedLogout" prefWidth="300.0" style="-fx-background-color: #d43737; -fx-font-weight: bold; -fx-background-radius: 15; -fx-font-size: 20; -fx-font-family: Poppins;" styleClass="logout-button" text="Log Out" textFill="WHITE">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Poppins Regular" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding></Button>
+
+    </children>
+
+</VBox>

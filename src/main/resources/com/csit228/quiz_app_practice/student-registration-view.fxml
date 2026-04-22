@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="900.0" prefWidth="600.0" style="-fx-background-color: #0f1b3d;" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csit228.quiz_app_practice.controller.StudentRegistrationController">
+
+    <children>
+
+        <VBox fx:id="rootContainer" alignment="TOP_CENTER">
+            <children>
+                <HBox>
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onClickedBack" prefWidth="70.0" styleClass="button-back" text="Back">
+                            <font>
+                                <Font name="Poppins Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../../Downloads/Images/student-icon-white.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="-30.0" right="30.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <Label text="Register as a Student" textFill="WHITE">
+                            <font>
+                                <Font name="Poppins Bold" size="30.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="40.0" />
+                    </VBox.margin>
+                </HBox>
+                <VBox alignment="CENTER_LEFT" maxWidth="400.0">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Label text="First Name" textFill="#d8f8ff">
+                                    <font>
+                                        <Font name="Poppins Regular" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="textFieldFirstName" styleClass="registration-input-field" promptText="Enter your first name">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="labelFirstNameError" styleClass="field-error-label" text="" visible="false" managed="false">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="7.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" maxWidth="400.0">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Label text="Last Name" textFill="#d8f8ff">
+                                    <font>
+                                        <Font name="Poppins Regular" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="textFieldLastName" styleClass="registration-input-field" promptText="Enter your last name">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="labelLastNameError" styleClass="field-error-label" text="" visible="false" managed="false">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="7.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" maxWidth="400.0">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Label text="Username" textFill="#d8f8ff">
+                                    <font>
+                                        <Font name="Poppins Regular" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="textFieldUsername" styleClass="registration-input-field" promptText="Enter your username">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="labelUsernameError" styleClass="field-error-label" text="" visible="false" managed="false">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                            <padding>
+                                <Insets top="5.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" maxWidth="400.0">
+                    <children>
+                        <HBox>
+                            <children>
+                                <Label text="Password" textFill="#d8f8ff">
+                                    <font>
+                                        <Font name="Poppins Regular" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets bottom="5.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <PasswordField fx:id="passwordFieldPassword" styleClass="registration-input-field" promptText="Enter your password">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </PasswordField>
+                        <TextField fx:id="visiblePasswordField" styleClass="registration-input-field" managed="false" promptText="Enter your password" visible="false">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Label fx:id="labelPasswordError" styleClass="field-error-label" text="" visible="false" managed="false">
+                            <font>
+                                <Font name="Arial" size="12.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefWidth="200.0">
+                            <children>
+                                <CheckBox fx:id="checkboxShowPassword" mnemonicParsing="false" onAction="#onClickedShowPassword" styleClass="checkbox-showpassword" text="Show password" textFill="#57aeff">
+                                    <font>
+                                        <Font name="Poppins Regular" size="13.0" />
+                                    </font>
+                                </CheckBox>
+                                <HBox alignment="CENTER_RIGHT" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" onAction="#onClickedSignIn" prefWidth="300.0" styleClass="button-signin-student" text="Sign In" textAlignment="CENTER">
+                    <font>
+                        <Font name="Poppins Bold" size="20.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="15.0" top="15.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="50.0" left="20.0" right="20.0" top="50.0" />
+            </padding>
+        </VBox>
+
+    </children>
+
+</VBox>
+
