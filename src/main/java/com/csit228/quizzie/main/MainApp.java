@@ -1,4 +1,4 @@
-package com.csit228.quiz_app_practice.main;
+package com.csit228.quizzie.main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(
-                getClass().getResource("/com/csit228/quiz_app_practice/login-view.fxml")
+                getClass().getResource("/com/csit228/quizzie/login-view.fxml")
         );
 
         Scene scene = new Scene(loader.load());

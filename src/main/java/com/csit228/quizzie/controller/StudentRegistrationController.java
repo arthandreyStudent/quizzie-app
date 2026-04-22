@@ -1,17 +1,13 @@
-package com.csit228.quiz_app_practice.controller;
+package com.csit228.quizzie.controller;
 
-import com.csit228.quiz_app_practice.util.*;
+import com.csit228.quizzie.util.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -75,13 +71,13 @@ public class StudentRegistrationController {
         }
 
         if (filledAllFields) {
-            Navigator.switchScreen(event, "/com/csit228/quiz_app_practice/registration-complete-view.fxml", "Registration Complete!");
+            Navigator.switchScreen(event, "/com/csit228/quizzie/registration-complete-view.fxml", "Registration Complete!");
         }
     }
 
     @FXML
     public void onClickedBack(ActionEvent event) throws IOException {
-        Navigator.switchScreen(event, "/com/csit228/quiz_app_practice/register-starting-view.fxml", "Register Account");
+        Navigator.switchScreen(event, "/com/csit228/quizzie/register-starting-view.fxml", "Register Account");
     }
 
     private void setupValidation() {

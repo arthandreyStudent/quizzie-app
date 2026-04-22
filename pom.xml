@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.csit228</groupId>
-    <artifactId>quiz_app_practice</artifactId>
+    <artifactId>quizzie</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>quiz_app_practice</name>
+    <name>quizzie</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -103,7 +103,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.csit228.loginsystemserialization/com.csit228.quiz_app_practice.HelloApplication
+                                com.csit228.loginsystemserialization/com.csit228.quizzie.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

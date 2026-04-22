@@ -1,4 +1,4 @@
-package com.csit228.quiz_app_practice.util;
+package com.csit228.quizzie.util;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;

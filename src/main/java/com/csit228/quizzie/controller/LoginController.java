@@ -1,17 +1,12 @@
-package com.csit228.quiz_app_practice.controller;
+package com.csit228.quizzie.controller;
 
-import com.csit228.quiz_app_practice.util.*;
+import com.csit228.quizzie.util.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.text.Normalizer;
 
 public class LoginController {
 
@@ -62,7 +57,7 @@ public class LoginController {
 
     @FXML
     public void onClickedCreateAcc(ActionEvent event) throws IOException {
-        Navigator.switchScreen(event, "/com/csit228/quiz_app_practice/register-starting-view.fxml", "Register Account");
+        Navigator.switchScreen(event, "/com/csit228/quizzie/register-starting-view.fxml", "Register Account");
     }
 
     @FXML

@@ -1,12 +1,10 @@
-package com.csit228.quiz_app_practice.controller;
+package com.csit228.quizzie.controller;
 
-import com.csit228.quiz_app_practice.util.Animator;
-import com.csit228.quiz_app_practice.util.Navigator;
-import javafx.animation.FadeTransition;
+import com.csit228.quizzie.util.Animator;
+import com.csit228.quizzie.util.Navigator;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.VBox;
-import javafx.util.Duration;
 
 public class RegistrationCompleteController {
 
@@ -19,6 +17,6 @@ public class RegistrationCompleteController {
 
     @FXML
     public void onClickedBackToLogin(ActionEvent event) {
-        Navigator.switchScreen(event, "/com/csit228/quiz_app_practice/login-view.fxml", "Quizzie - Login");
+        Navigator.switchScreen(event, "/com/csit228/quizzie/login-view.fxml", "Quizzie - Login");
     }
 }

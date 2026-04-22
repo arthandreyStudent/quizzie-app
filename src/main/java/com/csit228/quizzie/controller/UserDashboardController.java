@@ -1,4 +1,4 @@
-package com.csit228.quiz_app_practice.controller;
+package com.csit228.quizzie.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

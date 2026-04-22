@@ -1,4 +1,4 @@
-module com.csit228.quiz_app_practice {
+module com.csit228.quizzie {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -9,17 +9,17 @@ module com.csit228.quiz_app_practice {
     requires javafx.graphics;
     requires java.desktop;
 
-    opens com.csit228.quiz_app_practice to javafx.fxml;
-    exports com.csit228.quiz_app_practice.util;
-    opens com.csit228.quiz_app_practice.util to javafx.fxml;
-    exports com.csit228.quiz_app_practice.main;
-    opens com.csit228.quiz_app_practice.main to javafx.fxml;
-    exports com.csit228.quiz_app_practice.controller;
-    opens com.csit228.quiz_app_practice.controller to javafx.fxml;
-    exports com.csit228.quiz_app_practice.model;
-    opens com.csit228.quiz_app_practice.model to javafx.fxml;
-    exports com.csit228.quiz_app_practice.dao;
-    opens com.csit228.quiz_app_practice.dao to javafx.fxml;
-//    exports com.csit228.quiz_app_practice.service;
-//    opens com.csit228.quiz_app_practice.service to javafx.fxml;
+    opens com.csit228.quizzie to javafx.fxml;
+    exports com.csit228.quizzie.util;
+    opens com.csit228.quizzie.util to javafx.fxml;
+    exports com.csit228.quizzie.main;
+    opens com.csit228.quizzie.main to javafx.fxml;
+    exports com.csit228.quizzie.controller;
+    opens com.csit228.quizzie.controller to javafx.fxml;
+    exports com.csit228.quizzie.model;
+    opens com.csit228.quizzie.model to javafx.fxml;
+    exports com.csit228.quizzie.dao;
+    opens com.csit228.quizzie.dao to javafx.fxml;
+//    exports com.csit228.quizzie.service;
+//    opens com.csit228.quizzie.service to javafx.fxml;
 }
