@@ -1,5 +1,7 @@
 # Quizzie - A Java-Based Quiz Application System
 
+![Quizzie Logo](/images/quizzie.png)
+
 ## 1. Purpose
 
 `Quizzie` is a Java-based quiz application system where teachers can create quizzes, manage questions, and students can answer them and view their results. The application supports multiple question types, including multiple-choice, true/false, and identification questions.
